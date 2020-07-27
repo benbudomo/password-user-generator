@@ -1,12 +1,16 @@
 # Generate Random Passwords For Local User
 
-This bash script creates users on the same Linux system.
+This bash script creates users on the same Linux system and automatically generates a password for each new account.
 
 ## Information and Goals
 
 * Enforces that the script executes with superuser privileges
 
-* Prompts the user for a username, the name of said user, and their initial password
+* Provides a usage statement similar to a man page if the user does not run the script properly
+
+* Uses the first argument provided on the command line as the username of the account. Any remaining arguments will be treated as comments
+
+* Automatically generates a random password for the new account
 
 * Informs if the account creation was successful/not successful
 
